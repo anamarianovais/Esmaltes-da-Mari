@@ -1,0 +1,82 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #F8F4F7;
+    --branco: #FFFFFF;
+    --laranja: #FF6F61;
+    --azul-degrade: linear-gradient(97.54deg, #DA7F9A 35.49%, #EAB8D1 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #FF6F61;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+a, button, img {
+    transition: 0.3s ease;
+}
+
+
+a:hover {
+    color: var(--laranja);
+    text-decoration: underline;
+}
+
+
+img {
+    border-radius: 10px;
+    border: 2px solid white; 
+    transition: border-color 0.3s ease;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+body.dark-mode {
+    --cor-de-fundo: #1A1A1A;
+    --branco: #EFEFEF;
+    --azul: #FF6F61;
+}
+
+.dark-mode .card {
+    background-color: #333;
+    color: var(--branco);
+}
+
+
+.banner__pesquisa {
+    border: 1px solid var(--laranja);
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 80%;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.banner__pesquisa:focus {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide:hover {
+    transform: scale(1.05);
+}
+
